@@ -1,0 +1,54 @@
+.navbarFlex-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #e8e0e0;
+  color: #1d1c1c;
+  height: 65px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin-bottom: 40px;
+}
+.navbarFlex-two {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+}
+.navbarMenuImage {
+  width: 45px !important;
+  height: 45px !important;
+  cursor: pointer;
+}
+.navbarMenu {
+  font-size: 1.2rem;
+  display: none;
+}
+.navbarMenu-list {
+  display: flex;
+  flex-direction: column;
+  color: #1d1c1c;
+  margin-top: 163px;
+  margin-right: -10px;
+  background-color: #212121;
+  padding: 70px 0 70px 10px;
+  border-radius: 4px;
+}
+.navberCancel{
+    color: #ffffff !important;
+    cursor: pointer ;
+    float: right !important;
+    width: 45px !important;
+    height: 45px  !important;
+    margin-left: 150px;
+}
+.navbarLinks {
+  margin-top: 15px;
+  cursor: pointer;
+}
