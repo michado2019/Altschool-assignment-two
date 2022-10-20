@@ -37,7 +37,7 @@
   margin-top: 163px;
   margin-right: -10px;
   background-color: #212121;
-  padding: 70px 0 70px 10px;
+  padding: 70px 0 70px 50px;
   border-radius: 4px;
 }
 .navberCancel{
@@ -46,7 +46,7 @@
     float: right !important;
     width: 45px !important;
     height: 45px  !important;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 .navbarLinks {
   margin-top: 15px;
