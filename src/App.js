@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import { Navbar } from "./LayoutComponents";
 import AppRouter from "./routes/AppRouter";
+import { Footer } from "./LayoutComponents";
 
 //Create theme
 const theme = {
@@ -27,6 +28,7 @@ function App() {
     <div className="App" style={{ color: foreground, background: background }}>
       <Navbar toggle={handleToggle} />
       <AppRouter />
+      <Footer />
     </div>
   );
 }

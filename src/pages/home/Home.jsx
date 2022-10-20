@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import {Link} from 'react-router-dom'
 import "./Home.css";
-
 export default function Home() {
   const [welcome, setWelcome] = React.useState(
     "Hi, I am a student of Altschool Africa. Welcome to my site!"

@@ -79,3 +79,31 @@ export const Navbar = (props) => {
     </nav>
   );
 };
+export const Footer = () => {
+  return (
+    <div className="footerSocial">
+      <div className="footerSocial-flex">
+      <a
+        href="https://twitter.com/Mike_Adeshina"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src="twitter--icon.png" alt="img" className="footerSocial-img" />
+      </a>
+      <a href="https://github.com/michado2019" target="_blank" rel="noreferrer">
+        <img src="github--icon.png" alt="img" className="footerSocial-img" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/michado2019"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src="linked--in_icon.png" alt="img" className="footerSocial-img" />
+      </a>
+      </div>
+      <footer className="footerCopyright">
+        <p className="copyright"> &copy;Michael Adeshina 2022</p>
+      </footer>
+    </div>
+  );
+};
