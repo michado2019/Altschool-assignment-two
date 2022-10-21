@@ -55,6 +55,9 @@
   background-color: #555555;
   padding: 50px 10px;
   margin-top: 10px;
+  position: sticky;
+  left: 0;
+  top: 100%;
 }
 .footerSocial-flex{
   display: flex;
