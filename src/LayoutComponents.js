@@ -102,7 +102,7 @@ export const Footer = () => {
       </a>
       </div>
       <footer className="footerCopyright">
-        <p className="copyright"> &copy;Michael Adeshina 2022</p>
+        <p className="copyright"> &copy;Michado 2022</p>
       </footer>
     </div>
   );

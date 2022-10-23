@@ -3,11 +3,12 @@
 }
 .aboutTitle{
     font-size: 32px;
-    color: #1d1c1c;
     padding-bottom: 20px;
+    color: #7e7b7b;
 }
 .aboutDescription{
     font-size: 20px;
+    color: #7e7b7b;
 }
 .aboutDetails{
     font-size: 20px;
