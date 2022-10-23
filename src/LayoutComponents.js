@@ -59,7 +59,7 @@ export const Navbar = (props) => {
       <ul className="navbarMenu" id="navbarMenu">
         <li className="navbarMenu-list" id="navbarMenu-list">
           <CloseOutlined
-            className="navberCancel"
+            className="navbarCancel"
             onClick={handleNavbarCancel}
           />
           <CustomNavLink to="/" className="navbarLinks">
