@@ -1,0 +1,22 @@
+
+.signUpPage-wrapper_form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+}
+.signUpPage-form_input, .signUpPage-btn{
+   margin-top: 10px;
+   padding: 7px 20px;
+   border-radius: 5px;
+   font-size: 18px;
+}
+.signUpPage-btn{
+    color: rgb(66, 167, 66);
+    background-color: #cccccc;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.signUpPage-btn:hover{
+    color: green;
+}
