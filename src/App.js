@@ -10,7 +10,7 @@ function ErrorFallback({ error }) {
   return (
     <div role="alert" className="errorFallback-wrapper">
       <p>Something went wrong!</p>
-      <pre style={{ color: "red" }}>{error.message}</pre>
+      <p style={{ color: "red", maxWidth: '80%', padding: '4%', fontSize: '24px'}}>{error.message}</p>
     </div>
   );
 }

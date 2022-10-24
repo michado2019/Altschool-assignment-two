@@ -5,6 +5,7 @@ import SignUpPage from "../pages/signUpPage/SignUpPage";
 import ErrorPage from "../pages/errorPage/ErrorPage";
 import Users from "../pages/users/Users";
 import UsersDetails from "../pages/users/UsersDetails";
+import User from "../pages/users/User";
 
 let Home = React.lazy(() => import("../pages/home/Home"));
 export default function AppRouter() {
@@ -15,6 +16,7 @@ export default function AppRouter() {
         <Route path="/about" element={<About />} />
         <Route path="/users" element={<Users />}>
           <Route path="details" element={<UsersDetails />} />
+          <Route path=":userId" element={<User />} />
         </Route>
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="*" element={<ErrorPage />} />

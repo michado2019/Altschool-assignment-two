@@ -12,7 +12,7 @@
   height: 100vh;
 }
 .usersTitle {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 20px 0;
   color: #555555;
 }
@@ -39,14 +39,19 @@
 }
 .displayUsers-details_div {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .displayUsers-details_btn {
   padding: 10px 20px;
   margin: 5% 0;
-  margin-left: 25%;
   background-color: purple;
   color: #ffffff;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
+}
+#displayUsers-details_btn{
+    background-color: rgb(139, 48, 139);
 }

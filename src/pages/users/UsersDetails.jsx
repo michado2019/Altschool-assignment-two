@@ -3,15 +3,29 @@ import { useFetch } from "../../CustomHooks";
 import "./UsersDetails.css";
 
 export default function UsersDetails() {
-  const [page, setPage] = useState(1);
   const { data, loading, error } = useFetch(
     "https://randomuser.me/api/?results=100"
   );
+
+  //Set states
+  const [page, setPage] = useState(1);
+  const [isAble, setIsAble] = useState(false);
+
+  //Handle reset
+  function handleReset() {
+    setIsAble(true);
+    if (isAble === true) {
+      setPage([]);
+    } else {
+      setPage(1);
+    }
+  }
   const perPage = 10;
   const pages = Math.ceil(data?.results.length / perPage);
   const skip = page * perPage - perPage;
   if (loading) return <h1 className="usersDataCondition">Loading...</h1>;
   if (error) return <h1 className="usersDataCondition">Error...</h1>;
+
   return (
     <div className="userDetails-wrapper">
       <div className="usersList">
@@ -24,7 +38,10 @@ export default function UsersDetails() {
               key={name.toLowerCase().replaceAll(" ", "")}
               className="usersList-item"
             >
-              <img src={picture} alt={name.first} className="usersImg" />
+              <img src={picture} 
+              alt={name.first} 
+              className="usersImg" 
+              />
               <h1 className="userNames">{`${index + 1}.${name}`}</h1>
               <p className="usersEmail">{email}</p>
             </div>
@@ -58,6 +75,9 @@ export default function UsersDetails() {
             next
           </button>
         }
+        <button onClick={handleReset} className="reset">
+          RESET
+        </button>
       </div>
     </div>
   );

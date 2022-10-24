@@ -13,3 +13,9 @@
   font-size: 16px;
   padding: 5px 0;
 }
+.reset{
+    padding: 7px 25px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 5px;
+}
