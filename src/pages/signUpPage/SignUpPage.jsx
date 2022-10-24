@@ -10,7 +10,7 @@ export default function SignUpPage() {
           <input type='password' placeholder='Choose password' className='signUpPage-form_input' />
           <button className='signUpPage-btn'>Sign up</button>
           <small>Forgot password?
-          <a href='#'>Click here</a>
+          <a href='index.html'>Click here</a>
           </small>
         </form>
     </div>
