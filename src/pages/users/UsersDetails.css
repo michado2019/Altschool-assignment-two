@@ -19,3 +19,25 @@
     color: #ffffff;
     border-radius: 5px;
 }
+
+/*Media Queries*/
+@media screen and (min-width: 769px) {
+  .usersList-item {
+    flex-direction: row;
+    padding: 5%;
+  }
+  .usersImg {
+    width: 30%;
+    height: 100%;
+  }
+  .userNames {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  .reset{
+    padding: 7px 25px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+}

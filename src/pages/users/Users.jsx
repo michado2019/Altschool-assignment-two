@@ -24,8 +24,8 @@ export default function Users() {
   const skip = (page * perPage) - perPage;
   return (
     <div className="usersWrapper">
-      <h1 className="usersTitle">Users</h1>
       <div className="usersList">
+      <h1 className="usersTitle">Users</h1>
         {data?.results.slice(skip, skip + perPage).map((each, index) => {
           const name = `${each.name.title} ${each.name.first} ${each.name.last}`;
           return (
