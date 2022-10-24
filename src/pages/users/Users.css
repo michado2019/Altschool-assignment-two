@@ -1,0 +1,52 @@
+.usersWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  height: 100%;
+}
+.usersDataCondition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.usersTitle {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #555555;
+}
+.usersList {
+  margin-top: 10px;
+}
+.usersList-details {
+  margin: 20px 0;
+}
+.usersList button {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 2px;
+  font-weight: 600;
+  border: 2px solid #555555;
+}
+.prev {
+  border: 0;
+  border-radius: 5px;
+}
+.next {
+  border: 0;
+  border-radius: 5px;
+}
+.displayUsers-details_div {
+  margin-top: 20px;
+}
+.displayUsers-details_btn {
+  padding: 10px 20px;
+  margin: 5% 0;
+  margin-left: 25%;
+  background-color: purple;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+}

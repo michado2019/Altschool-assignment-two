@@ -1,0 +1,15 @@
+.usersList-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+.usersImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.userNames {
+  font-size: 16px;
+  padding: 5px 0;
+}

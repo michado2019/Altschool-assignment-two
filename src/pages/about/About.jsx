@@ -6,7 +6,7 @@ export default function About() {
     <div className="aboutWrapper">
       <h2 className="aboutTitle">About</h2>
       <h3 className="aboutDescription">
-        This app is built to showcase all of these feature:
+        This app is built to showcase all of these features:
       </h3>
       <p className="aboutDetails">
         Setup react-router, implement Nested routes, 404 page, and Error

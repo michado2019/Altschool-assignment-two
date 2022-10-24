@@ -4,6 +4,7 @@ import { Navbar } from "./LayoutComponents";
 import AppRouter from "./routes/AppRouter";
 import { Footer } from "./LayoutComponents";
 import { ErrorBoundary, useErrorHandler } from "react-error-boundary";
+import { ArrowUpward } from "@mui/icons-material";
 
 function ErrorFallback({ error }) {
   return (
@@ -43,6 +44,8 @@ function App() {
     <div className="App" style={{ color: foreground, background: background }}>
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <Navbar toggle={handleToggle} />
+        <div id='region'>{}</div>
+        <a href='#region' rel='noreferrer' className="jumper"><ArrowUpward /></a>
         <AppRouter />
         <Footer />
       </ErrorBoundary>
