@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import { Navbar } from "./LayoutComponents";
 import AppRouter from "./routes/AppRouter";
 import { Footer } from "./LayoutComponents";
+import { ErrorBoundary, useErrorHandler } from "react-error-boundary";
 
+function ErrorFallback({ error }) {
+  return (
+    <div role="alert" className="errorFallback-wrapper">
+      <p>Something went wrong!</p>
+      <pre style={{ color: "red" }}>{error.message}</pre>
+    </div>
+  );
+}
 //Create theme
 const theme = {
   light: {
@@ -17,6 +26,12 @@ const theme = {
 };
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const handleError = useErrorHandler();
+
+  //use effect to handle error
+  useEffect(() => {
+    handleError();
+  }, [handleError]);
 
   //Handle dark and light modes
   const handleToggle = () => {
@@ -26,9 +41,11 @@ function App() {
   let { foreground, background } = value;
   return (
     <div className="App" style={{ color: foreground, background: background }}>
-      <Navbar toggle={handleToggle} />
-      <AppRouter />
-      <Footer />
+      <ErrorBoundary FallbackComponent={ErrorFallback}>
+        <Navbar toggle={handleToggle} />
+        <AppRouter />
+        <Footer />
+      </ErrorBoundary>
     </div>
   );
 }
