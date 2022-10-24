@@ -34,3 +34,21 @@
         line-height: 36px;
     }
 }
+@media screen and (min-width: 1025px) {
+    .aboutWrapper{
+        padding: 100px 100px;
+    }
+    .aboutTitle{
+        font-size: 48px;
+        padding-bottom: 20px;
+        color: #7e7b7b;
+    }
+    .aboutDescription{
+        font-size: 28px;
+        color: #7e7b7b;
+    }
+    .aboutDetails{
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
