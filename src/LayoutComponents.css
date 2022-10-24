@@ -64,7 +64,7 @@
 .footerSocial {
   background-color: #555555;
   padding: 50px 10px;
-  margin-top: 10px;
+  margin-top: 50px;
   position: sticky;
   left: 0;
   top: 100%;
@@ -86,7 +86,8 @@
   color: #ffffff;
   font-weight: 600;
   font-size: 20px;
-  padding: 15px 0;
+  padding-bottom: 30;
+  padding-top: 40px;
 }
 
 /*Media Queries*/
