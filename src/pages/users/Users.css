@@ -1,7 +1,7 @@
 .usersWrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
+  padding: 0 5%;
   height: 100%;
   line-height: 32px;
   margin: 50px 0;
@@ -90,21 +90,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-  }
-  .usersList {
-    margin-top: 0;
-  }
-  .usersList-details {
-    margin: 0;
-  }
-  .usersList button {
-    margin: 0;
-  }
-  .displayUsers-details_div {
-    margin-top: 0;
-  }
-  .displayUsers-details_btn {
-    margin: 35px 10px;
   }
 }
     

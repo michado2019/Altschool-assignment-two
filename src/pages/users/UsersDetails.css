@@ -1,3 +1,6 @@
+.userDetails-wrapper {
+  margin-top: 50px;
+}
 .usersList-item {
   display: flex;
   flex-direction: column;
@@ -7,6 +10,19 @@
   border-radius: 5px;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  animation-name: details;
+  animation-duration: 5s;
+}
+
+@keyframes image {
+  0% {
+    margin-right: -600px;
+  }
+  100% {
+    margin-right: 0;
+  }
 }
 .usersImg {
   width: 100%;
@@ -19,34 +35,59 @@
   padding: 5px 0;
   font-weight: 600;
 }
-.reset{
-    padding: 7px 25px;
-    background-color: red;
-    color: #ffffff;
-    border-radius: 5px;
-    border: 0;
-    font-weight: 600;
-    cursor: pointer;
+.reset {
+  padding: 7px 25px;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /*Media Queries*/
-@media screen and (min-width: 769px) {
-  .usersList-item {
-    flex-direction: row;
-    padding: 5%;
-  }
-  .usersImg {
-    width: 30%;
-    height: 100%;
+@media screen and (min-width: 376px) {
+  .userDetails-wrapper {
+    padding: 0 12%;
   }
   .userNames {
-    font-size: 18px;
-    padding: 5px 10px;
+    font-size: 16px;
   }
-  .reset{
+  .usersEmail{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .userDetails-wrapper {
+    padding: 0;
+  }
+  .usersList-item {
+    flex-direction: row;
+    padding: 1%;
+  }
+}
+  .usersImg {
+    width:50%;
+    height: 50%;
+  }
+  .userNames {
+    font-size: 12px;
+    padding: 5px 5px;
+    text-align: center;
+  }
+  .usersEmail{
+    text-align: center;
+    font-size: 12px;
+  }
+  .reset {
     padding: 7px 25px;
     background-color: red;
     color: #ffffff;
     border-radius: 5px;
+  }
+@media screen and (min-width: 940px) {
+  .usersImg {
+    width: 30%;
+    height: 80%;
   }
 }

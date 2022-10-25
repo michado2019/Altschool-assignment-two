@@ -1,13 +1,13 @@
-.userWrapper{
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 50px 10px;
-    box-shadow: 0.3px 1px 2px #111111;
+.userWrapper {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 50px 10px;
+  box-shadow: 0.3px 1px 2px #111111;
 }
 .userTitle {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   margin: 20px 0;
   color: #555555;
   background-color: #ffffff;
@@ -23,24 +23,20 @@
   margin: 0 0 1rem 0;
   line-height: 24px;
   margin-top: 30px;
+  margin-bottom: -50px;
   padding: 30px 40px;
   border-radius: 10px;
   border: 1px solid #ffffff;
   box-shadow: 5px 7px 10px #111111;
   animation-name: flex;
-  animation-duration: 1s;
+  animation-duration: 3s;
 }
 @keyframes flex {
   0% {
     margin-top: -600px;
-    margin-right: -600px;
-    rotate: 10deg;
   }
   100% {
     margin-top: 0;
-    transition: all 0.5s;
-    margin-right: 0;
-    rotate: 20deg;
   }
 }
 .userFlex > img {
@@ -57,21 +53,46 @@
   font-weight: 600;
   color: #323131;
 }
-
+@media screen and (min-width: 481px) {
+  .userFlex {
+    margin: _ 10%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .userFlex {
+    margin: _ 15%;
+  }
+}
 @media screen and (min-width: 769px) {
+    .userTitle {
+        font-size: 1rem;
+        margin: 10px 0;
+        padding:5px 10px;
+      }
   .userFlex {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0 0 1rem 0;
+    margin: _ 2%;
     line-height: 24px;
     margin-top: 30px;
   }
   .userFlex > img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 0 0 1rem 0;
-    margin-right: 20px;
+    width: 20%;
+    height: 20%;
+    margin-right: 5px;
+    margin-left: -20px;
+  }
+  .userDiv > p {
+    color: #a19f9d;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+  .userLabels {
+    font-weight: 600;
+    color: #323131;
+    padding: 0;
+    margin: 0;
   }
 }

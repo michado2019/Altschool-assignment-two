@@ -22,3 +22,14 @@
   padding: 6px 11px;
 
 }
+
+@media screen and (min-width: 1025px) {
+  .App{
+    margin: 0 auto;
+    max-width: 80%;
+    border: 1px solid #6b202051;
+  }
+  .jumper {
+    margin-right: 11%;
+  }
+}

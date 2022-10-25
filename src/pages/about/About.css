@@ -6,7 +6,20 @@
     box-shadow: 2px 4px 8px #111111;
     border-radius: 10px;
     margin: 20px;
+    margin-top: 50px;
+    animation-name: about;
+    animation-duration: 0.3s;
 }
+@keyframes about {
+    0%{
+    margin-right: 400px;
+    transform: skewX(-1deg);
+    }
+    100%{
+    margin-left: 0;
+    }
+}
+
 .aboutTitle{
     font-size: 32px;
     padding-bottom: 20px;
@@ -27,7 +40,7 @@
 /*Media Queries*/
 @media screen and (min-width: 701px) {
     .aboutWrapper{
-        padding: 60px 60px;
+        margin: 5% 10%;
     }
     .aboutTitle{
         font-size: 40px;
@@ -45,7 +58,7 @@
 }
 @media screen and (min-width: 1025px) {
     .aboutWrapper{
-        padding: 100px 100px;
+        margin: 8% 15%;
     }
     .aboutTitle{
         font-size: 48px;
