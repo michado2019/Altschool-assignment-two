@@ -41,11 +41,52 @@
   width: 100%;
   margin-top: 50px;
 }
+.homepageBox-image_one {
+  animation-name: image;
+  animation-duration: 1s;
+}
+@keyframes image {
+  0% {
+    rotate: 0deg;
+    margin-top: -600px;
+  }
+  100% {
+    rotate: 10deg;
+    margin-top: 0;
+    transition: all 0.5s;
+  }
+}
 .homepageBox-image_two {
   background-image: url("https://thealtschool.com/wp-content/uploads/2022/02/pexels-charlotte-may-5965650.png?w=1024");
+  animation-name: img;
+  animation-duration: 1s;
+}
+@keyframes img {
+  0% {
+    rotate: 0deg;
+    margin-left: -700px;
+  }
+  100% {
+    rotate: 10deg;
+    margin-left: 0;
+    transition: all 0.5s;
+  }
 }
 .homepageBox-image_three {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU_phbARGGUeQyPqIBfE6KTNWcjP4lP3IzGQ&usqp=CAU");
+  animation-name: imag;
+  animation-duration: 1s;
+}
+@keyframes imag {
+  0% {
+    rotate: 0deg;
+    margin-top: -800px;
+  }
+  100% {
+    rotate: 10deg;
+    margin-top: 0;
+    transition: all 0.5s;
+  }
 }
 .homepageBox-image_text {
   color: #ffffff;
@@ -73,15 +114,4 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  @keyframes image-flex {
-    0% {
-      margin-left: -50px;
-    }
-    100% {
-      margin-left: 0;
-    }
-  }
-    
-  }
-
-  
+}
