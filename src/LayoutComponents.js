@@ -9,6 +9,7 @@ import { CustomNavLink } from "./CustomHooks";
 import "./LayoutComponents.css";
 
 export const Navbar = (props) => {
+  
   //Handle navbar cancellation
   const handleNavbarCancel = () => {
     document.getElementById("navbarMenu-list").style.marginLeft = "none";
