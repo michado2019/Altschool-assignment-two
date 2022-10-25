@@ -1,5 +1,12 @@
 .userTitle{
     text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #555555;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 8px #cccccc;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 .userFlex{
     display: flex;
@@ -21,7 +28,6 @@
   margin-top: -600px;
   margin-right: -600px;
   rotate: 10deg;
-
 }
 100% {
   margin-top: 0;
@@ -30,7 +36,6 @@
   rotate: 20deg;
 }
 }
-
 .userFlex >img{
     width: 120px;
     height: 120px;
@@ -43,6 +48,7 @@
 }
 .userLabels{
     font-weight: 600;
+    color: #323131;
 }
 
 @media screen and (min-width: 769px) {
@@ -53,11 +59,16 @@
         margin: 0 0 1rem 0;
         line-height: 24px;
         margin-top: 30px;
+        background-color: #ffe1bc;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 5px 7px 10px #cccccc;
     }
     .userFlex >img{
         width: 200px;
         height: 200px;
         border-radius: 50%;
         margin: 0 0 1rem 0;
+        margin-right: 20px;
     }
 }
