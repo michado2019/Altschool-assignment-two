@@ -25,25 +25,25 @@ export default function User() {
   if (userId) {
     return (
       <div className="userWrapper">
-        <h1 className="userTitle">User Details</h1>
+        <h1 className="userTitle">Users Full Details</h1>
         <div className="userDetails">
           {data?.results.map((item) => {
             return (
               <div key={item} className="userFlex">
                 <img src={item.picture.large} alt="user" />
-                <div>
-                  <h1>
-                    {item.name.first} {item.name.last}
-                  </h1>
-                  <p>{item.email}</p>
-                  <p>{item.phone}</p>
-                  <p>{item.location.city}</p>
-                  <p>{item.location.country}</p>
-                  <p>{item.location.state}</p>
-                  <p>{item.location.street.name}</p>
-                  <p>{item.location.street.number}</p>
-                  <p>{item.location.timezone.description}</p>
-                  <p>{item.location.timezone.offset}</p>
+                <div className="userDiv">
+                  <h3>
+                    <span className="userLabels">Name: </span>{item.name.first} {item.name.last}
+                  </h3>
+                  <p><span className="userLabels">Email: </span>{item.email}</p>
+                  <p><span className="userLabels">Phone: </span>{item.phone}</p>
+                  <p><span className="userLabels">City: </span>{item.location.city}</p>
+                  <p><span className="userLabels">Country: </span>{item.location.country}</p>
+                  <p><span className="userLabels">State: </span>{item.location.state}</p>
+                  <p><span className="userLabels">Street: </span>{item.location.street.name}</p>
+                  <p><span className="userLabels">Street No: </span>{item.location.street.number}</p>
+                  <p><span className="userLabels">Timezone description: </span>{item.location.timezone.description}</p>
+                  <p><span className="userLabels"><span>Timezone offset: </span>: </span>{item.location.timezone.offset}</p>
                 </div>
               </div>
             );
