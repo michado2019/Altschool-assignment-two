@@ -4,6 +4,7 @@
   padding: 0 10px;
   height: 100%;
   line-height: 32px;
+  margin: 50px 0;
 }
 .usersDataCondition {
   display: flex;
@@ -17,15 +18,14 @@
   margin: 20px 0;
   color: #555555;
   background-color: #ffffff;
-  box-shadow: 2px 4px 8px #cccccc;
   padding: 10px 20px;
   border-radius: 5px;
+  box-shadow: 2px 4px 2px #111111;
 }
 .usersList {
   margin-top: 10px;
-  box-shadow: 2px 4px 8px #111111;
+  box-shadow: 0.3px 1px 2px #111111;
   border-radius: 10px;
-  background-color: #f1e6d9;
   padding: 20px 10px;
 }
 .usersList-details {
@@ -34,7 +34,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
-  box-shadow: 2px 4px 8px #cccccc;
+  box-shadow: 0.3px 1px 2px #111111;
   padding: 10px 20px;
   border-radius: 5px;
 }
