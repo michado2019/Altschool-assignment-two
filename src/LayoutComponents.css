@@ -92,6 +92,9 @@
 
 /*Media Queries*/
 @media screen and (min-width: 769px) {
+  .navbarFlex-one{
+   height: 100px;
+  }
   .navbarMenuImage {
     display: none !important;
   }
