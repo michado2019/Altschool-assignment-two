@@ -49,7 +49,7 @@ export const Navbar = (props) => {
           />
         </a>
         <span onClick={handleDarkModeImage} onClickCapture={props.toggle}>
-          {darkModeImage.img}
+          {darkModeImage.img }
         </span>
       </div>
       <MenuOutlined

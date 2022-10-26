@@ -33,7 +33,7 @@
 .homepageBox-image_one,
 .homepageBox-image_two,
 .homepageBox-image_three {
-  background-image: url("https://thealtschool.com/wp-content/uploads/2022/02/pexels-charlotte-may-5965650-1.png?w=1536");
+  background-image: url("/public/assignment2-homepage_img.webp");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -59,7 +59,7 @@
   }
 }
 .homepageBox-image_two {
-  background-image: url("https://thealtschool.com/wp-content/uploads/2022/02/pexels-charlotte-may-5965650.png?w=1024");
+  background-image: url("/public/assignment2-homepage_img2.webp");
   animation-name: img;
   animation-duration: 1s;
 }
@@ -75,7 +75,7 @@
   }
 }
 .homepageBox-image_three {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU_phbARGGUeQyPqIBfE6KTNWcjP4lP3IzGQ&usqp=CAU");
+  background-image: url("/public/assignment2-homepage_img3.webp");
   animation-name: imag;
   animation-duration: 1s;
 }
@@ -120,17 +120,12 @@
   .homepageBox-image_one,
   .homepageBox-image_two,
   .homepageBox-image_three {
-    height: 300px;
+    height: 200px;
   }
 }
 @media screen and (min-width: 941px) {
   .homepageBox-image_flex {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  .homepageBox-image_one,
-  .homepageBox-image_two,
-  .homepageBox-image_three {
-    height: 280px;
   }
 }

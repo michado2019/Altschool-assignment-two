@@ -5,7 +5,7 @@ export const CustomNavLink = ({ to, ...props }) => {
   let activeStyle = {
     color: "red",
     transition: "all 0.5s",
-    fontWeight: "bold",
+    fontWeight: "900",
     textDecoration: "none",
   };
   return (
@@ -13,7 +13,7 @@ export const CustomNavLink = ({ to, ...props }) => {
       style={({ isActive }) =>
         isActive
           ? activeStyle
-          : { color: "#111111", textDecoration: "none", fontWeight: "bold" }
+          : { color: "#7c7878", textDecoration: "none", fontWeight: "900" }
       }
       to={to}
       end
