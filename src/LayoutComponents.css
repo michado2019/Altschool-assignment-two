@@ -16,8 +16,8 @@
   justify-content: space-around;
 }
 .logo {
-  width: 100px;
-  height: 70px;
+  width: 70px;
+  height: 50px;
   cursor: pointer;
 }
 .navbarMenuImage {
@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   color: #1d1c1c;
-  margin-top: 352px;
+  margin-top: 372px;
   margin-right: -10px;
   background-color: #ffe1bc;
   padding: 20px 0 70px 50px;
