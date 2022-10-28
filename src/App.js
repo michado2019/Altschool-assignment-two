@@ -45,7 +45,7 @@ function App() {
       <ErrorBoundary FallbackComponent={ErrorFallback}>
         <Navbar toggle={handleToggle} />
         <div id='region'>{}</div>
-        <a href='#region' rel='noreferrer' className="jumper"><ArrowUpward /></a>
+        <a href='#region' className="jumper"><ArrowUpward /></a>
         <AppRouter />
         <Footer />
       </ErrorBoundary>
